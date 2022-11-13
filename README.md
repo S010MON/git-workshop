@@ -151,7 +151,7 @@ To set up your local git to push to remote do the following steps:
   
   4. Create a new access token, setting the expiry to "No Expiration" and tick the "Repo" option
   
-  5. You will be given a token code, copy it and don't close the page!  We now need to go back to the terminal
+  5. You will be given a token code **copy it and don't close the page!** We now need to go back to the terminal
   
   6. Run the following commands:
     
