@@ -4,7 +4,7 @@
 1. ![What is Git and how does it work?](https://github.com/S010MON/git-workshop/edit/main/README.md#1-what-is-git-and-how-does-it-work)
 2. ![How can you use Git as an individual on your projects?](https://github.com/S010MON/git-workshop/edit/main/README.md#2-how-can-you-use-git-as-an-individual-on-your-projects)
 3. ![Basic Git commands in the terminal](https://github.com/S010MON/git-workshop/edit/main/README.md#3-basic-git-commands-in-the-terminal)
-4. Connecting to GitHub in the terminal
+4. ![Connecting to GitHub in the terminal](https://github.com/S010MON/git-workshop#connecting-to-github-in-the-terminal)
 5. Using IntelliJ IDEA with Github.
 6. How can you use git in group projects?
 
