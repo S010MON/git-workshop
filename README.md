@@ -90,6 +90,7 @@ Now that you have a git folder, you can check on the staus of the folder using `
 $ git staus
 ```
 The ouput should look like this:
+
 ![](https://github.com/S010MON/git-workshop/blob/main/images/status-untracked.png)
 
 #### add
@@ -98,9 +99,11 @@ If we have changed a file we need to track its changes to confirm that they are 
 $ git add [file_name]
 ```
 The image below shows that the file we saw earlier is now tracked and shows up in green:
+
 ![](https://github.com/S010MON/git-workshop/blob/main/images/status-tracked.png)
 
 Why don't we track all the files?  We if we compiled our Java code into a `.class` file, we don't want to record that.  It's a binary and not soruce code, so we can just recompile everything when we change the source anyway.  So make sure you select the right files to track when you have something like the below:
+
 ![](https://github.com/S010MON/git-workshop/blob/main/images/status-class-files.png)
 
 #### commit
@@ -109,4 +112,5 @@ To save our changes we use the `commit` command to save the state of the system 
 $ git commit -m [MY_MESSAGE_FOR_THIS_COMMIT]
 ```
 To use the `-m` tag, add a message in quotes like this:
+
 ![](https://github.com/S010MON/git-workshop/blob/main/images/commit.png)
