@@ -5,7 +5,7 @@
 2. ![How can you use Git as an individual on your projects?](https://github.com/S010MON/git-workshop/edit/main/README.md#2-how-can-you-use-git-as-an-individual-on-your-projects)
 3. ![Basic Git commands in the terminal](https://github.com/S010MON/git-workshop/edit/main/README.md#3-basic-git-commands-in-the-terminal)
 4. ![Connecting to GitHub in the terminal](https://github.com/S010MON/git-workshop#connecting-to-github-in-the-terminal)
-5. Using IntelliJ IDEA with Github.
+5. ![Using IntelliJ IDEA with Github](https://github.com/S010MON/git-workshop/edit/main/README.md#5-using-intellij-idea-with-github)
 6. How can you use git in group projects?
 
 ## 1. What is Git and how does it work?
@@ -76,7 +76,7 @@ A * : Initialse project
 Git was built by Linus Torvalds (of linux fame) and is available on the terminal of all major operating systems.  Many IDEs have support inbuilt, and there are desktop Git editors that you can use.  However they all use the underlying terminal implementation.  It is very useful to first learn how to work with the Git terminal, because it is far more powerful than most editors, and if a language (like MATLAB) doesn't support Git natively, you can just use it in the terminal.
 
 There are 4 main commands you should learn:
-*note: for these examples I'm showing what it would look like for a linux terminal (`user:~$` which I have shortend to `$` you may have something else for windows such as `C:\Users\name>` so please don't include the $ in your commands!*
+*note: for these examples I'm showing what it would look like for a linux terminal (*`user:~$`* which I have shortend to *`$`* you may have something else for windows such as *`C:\Users\name>`* so please don't include the *`$`* in your commands!*
 
 #### init
 Any folder can become a git folder with `init`.  You simply need to navigate to the folder in the terminal and run:
@@ -140,3 +140,27 @@ Now try and modify the java code in this repo to add an extra function that prin
 
 #### Push
 When we update the cloud with new local changes, it is called a push.  When we get new remote changes from the cloud, it is called a pull.  So we can use the `push` command to push our changes to the cloud.  However this does require you to have a GitHub account and to input your username and a token, this setup can be a little long, but once it's done you shouldnt't need to change it until your token expires.
+
+To set up your local git to push to remote do the following steps:
+
+  1. Go to your github account and select your user icon on the top right.  In the drop down menu select *Settings*
+  
+  2. Scroll down the page and look for *Developer Settings*
+  
+  3. Open up *Personal Access Tokens (Classic)*
+  
+  4. Create a new access token, setting the expiry to "No Expiration" and tick the "Repo" option
+  
+  5. You will be given a token code, copy it and don't close the page!  We now need to go back to the terminal
+  
+  6. Run the following commands:
+    
+  ```bash
+  $ git config --global credential.helper store
+  $ git push http://example.com/repo.git          # <- this will only appear if you haven't set a remote repo, so might not show!
+  Username: [type your github username]
+  Password: [Paste your token]
+  ```
+When you push you will notice that you overwrite the code on the cloud, when working in a group, this is not ideal, so in section 6 we will explore how to collaborate using different branches to avoid overwriting.
+
+## 5. Using IntelliJ IDEA with Github
