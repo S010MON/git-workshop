@@ -131,7 +131,7 @@ $ git clone https://github.com/S010MON/git-workshop
 ```
 
 #### Exercise
-Now try and modify the code to add an extra function that prints your name instead of mine and commit that locally in the process we used above!  As a recap, the steps are:
+Now try and modify the java code in this repo to add an extra function that prints your name instead of mine and commit that locally in the process we used above!  As a recap, the steps are:
 
    1. Clone
    2. Write code
