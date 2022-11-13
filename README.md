@@ -89,9 +89,24 @@ Now that you have a git folder, you can check on the staus of the folder using `
 ```bash
 $ git staus
 ```
+The ouput should look like this:
+![Status without tracked files]()
 
 #### add
-If we have changed a file
+If we have changed a file we need to track its changes to confirm that they are to be tracked by Git.
 ```bash
-git add [file_name]
+$ git add [file_name]
 ```
+The image below shows that the file we saw earlier is now tracked and shows up in green:
+![Status with tracked files]()
+
+Why don't we track all the files?  We if we compiled our Java code into a `.class` file, we don't want to record that.  It's a binary and not soruce code, so we can just recompile everything when we change the source anyway.  So make sure you select the right files to track when you have something like the below:
+![Status with class files included]()
+
+#### commit
+To save our changes we use the `commit` command to save the state of the system at the current point.  You must add a message to all commits and you can do this using the `-m` tag.  IF you forget you will get a text editor pop-up that will ask you to add a message.  
+```bash
+$ git commit -m [MY_MESSAGE_FOR_THIS_COMMIT]
+
+To use the `-m` tag, add a message in quotes like this:
+![Commit]()
