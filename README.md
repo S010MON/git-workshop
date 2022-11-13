@@ -87,7 +87,7 @@ $ git init
 #### status
 Now that you have a git folder, you can check on the staus of the folder using `status`.  This will show you what changes are being tracked, and what is being ignored by git:
 ```bash
-$ git staus
+$ git status
 ```
 The ouput should look like this:
 
