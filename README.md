@@ -114,3 +114,29 @@ $ git commit -m [MY_MESSAGE_FOR_THIS_COMMIT]
 To use the `-m` tag, add a message in quotes like this:
 
 ![](https://github.com/S010MON/git-workshop/blob/main/images/commit.png)
+
+#### Other
+Additional commands include:
+`$ git checkout` to checkout a new branch
+`$ git branch` to see which branch you're on and what is available
+`$ git help` to ge the help menu and list information about commands
+
+## Connecting to GitHub in the terminal
+Now this is useful, but the real power of Git comes when combined with the internet.  GitHub, BitBucket, and BitLocker are a few websites that allow you to store your code online, and share it with people.  GitHub is the most popular, but has faced some contoversy when it was bought by Microsoft, but is the system we will focus on.  We can clone a repository from online, make changes to it and then push those changes to the cloud to keep safe copies online or to share across multiple devices.  This works as follows:
+
+#### Clone
+You can make a clone of an online branch by using the `clone` command with the target URL from the repo you want.  For example, if you use the command below, you will make a clone of this workshop's repo.
+```Bash
+$ git clone https://github.com/S010MON/git-workshop
+```
+
+#### Exercise
+Now try and modify the code to add an extra function that prints your name instead of mine and commit that locally in the process we used above!  As a recap, the steps are:
+
+   1. Clone
+   2. Write code
+   3. Add files
+   4. Commit with message
+
+#### Push
+When we update the cloud with new local changes, it is called a push.  When we get new remote changes from the cloud, it is called a pull.  So we can use the `push` command to push our changes to the cloud.  However this does require you to have a GitHub account and to input your username and a token, this setup can be a little long, but once it's done you shouldnt't need to change it until your token expires.
