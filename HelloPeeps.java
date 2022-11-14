@@ -7,6 +7,6 @@ public class HelloPeeps
 
 	public static String leonFunction()
 	{
-		return "Leon";
+		return "Hai";
 	}
 }
