@@ -169,3 +169,5 @@ IntelliJ IDEA is a very popular Java IDE that features excellent Git integration
 ![Screenshot from 2022-11-14 10-24-43](https://user-images.githubusercontent.com/10490509/201623629-0462b4bc-8899-48fe-9dba-17df8bc62b5b.png)
 
 Select the `GitHub` option and go through the steps of creating a token by selecting the `generate token` option.  It is important you do it this way, and not as outlined for the terminal above, as IDEA requires some extra permissions.  Once this is done, you will be able to manage all your github actions within the IDE.
+
+test
