@@ -164,3 +164,8 @@ To set up your local git to push to remote do the following steps:
 When you push you will notice that you overwrite the code on the cloud, when working in a group, this is not ideal, so in section 6 we will explore how to collaborate using different branches to avoid overwriting.
 
 ## 5. Using IntelliJ IDEA with Github
+IntelliJ IDEA is a very popular Java IDE that features excellent Git integration.  When starting the IDE you can choose to clone a directory directly from GitHub by linking the IDE to your account by clicking the `Get from VCS` option.
+
+![Screenshot from 2022-11-14 10-24-43](https://user-images.githubusercontent.com/10490509/201623629-0462b4bc-8899-48fe-9dba-17df8bc62b5b.png)
+
+Select the `GitHub` option and go through the steps of creating a token by selecting the `generate token` option.  It is important you do it this way, and not as outlined for the terminal above, as IDEA requires some extra permissions.  Once this is done, you will be able to manage all your github actions within the IDE.
