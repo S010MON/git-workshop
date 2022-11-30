@@ -4,8 +4,13 @@ public class HelloPeeps
 	{
 		System.out.println("Hello " + leonFunction() + "! How are you?");
 	}
-
+	
 	public static String leonFunction()
+	{
+		return "leon";	
+	}
+
+	public static String glebFunction()
 	{
 		return "gleb";
 	}
