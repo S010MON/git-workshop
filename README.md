@@ -6,7 +6,7 @@
 3. ![Basic Git commands in the terminal](https://github.com/S010MON/git-workshop/edit/main/README.md#3-basic-git-commands-in-the-terminal)
 4. ![Connecting to GitHub in the terminal](https://github.com/S010MON/git-workshop#connecting-to-github-in-the-terminal)
 5. ![Using IntelliJ IDEA with Github](https://github.com/S010MON/git-workshop/edit/main/README.md#5-using-intellij-idea-with-github)
-6. ![Working in a Team](https://github.com/S010MON/git-workshop/edit/main/README.md#6-working-as-a-team)
+6. ![Working in a Team]([https://github.com/S010MON/git-workshop/edit/main/README.md#6-working-as-a-team](https://github.com/S010MON/git-workshop/blob/main/README.md#6-working-as-a-team))
 
 ## 1. What is Git and how does it work?
 Git is a Version Control System (VCS) that is used to modify software to try out changes without losing the original working version.  Git works using a graph implementation:
