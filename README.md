@@ -6,7 +6,7 @@
 3. ![Basic Git commands in the terminal](https://github.com/S010MON/git-workshop/edit/main/README.md#3-basic-git-commands-in-the-terminal)
 4. ![Connecting to GitHub in the terminal](https://github.com/S010MON/git-workshop#connecting-to-github-in-the-terminal)
 5. ![Using IntelliJ IDEA with Github](https://github.com/S010MON/git-workshop/edit/main/README.md#5-using-intellij-idea-with-github)
-6. How can you use git in group projects?
+6. ![Working in a Team](https://github.com/S010MON/git-workshop/edit/main/README.md#6-working-as-a-team)
 
 ## 1. What is Git and how does it work?
 Git is a Version Control System (VCS) that is used to modify software to try out changes without losing the original working version.  Git works using a graph implementation:
@@ -170,4 +170,33 @@ IntelliJ IDEA is a very popular Java IDE that features excellent Git integration
 
 Select the `GitHub` option and go through the steps of creating a token by selecting the `generate token` option.  It is important you do it this way, and not as outlined for the terminal above, as IDEA requires some extra permissions.  Once this is done, you will be able to manage all your github actions within the IDE.
 
-test IntelliJ
+## 6. Working as a Team
+When we work as a team, merging code together is the hardest part of collaboration.  However much we strive to use seperate files and compose functions into reuseable sub-components, there will always be accidental overwrites ore changes in requirements that cross the boundaries that we have set to work in.  This is where GitHub has a handy solution; pull requests.
+
+To get started we create a new branch for the issue or feature we are going to add:
+
+![Screenshot from 2022-11-30 10-35-00](https://user-images.githubusercontent.com/10490509/204761516-722edda2-2781-41e2-b205-efa855b36888.png)
+
+Next we write out code following the process above of getting the code to our local machine, making and testing changes, then pushing those changes to the cloud.  Once the code is ready and tested, we can create a new pull request to merge our code into the `main` or `master` branch. Fisrt we navigate to the `pull requests` menu:
+
+![Screenshot from 2022-11-30 10-36-13](https://user-images.githubusercontent.com/10490509/204762011-0d0f8a69-2e61-47bf-8c9c-4c0a6a372261.png)
+
+And then select a new pull request, note we need to select which branch we are coming from, and which we are going to (N.B. the arrow goes in an unintuitive direction from right to left, so the left side is where you are pulling from!)
+
+![Screenshot from 2022-11-30 10-36-30](https://user-images.githubusercontent.com/10490509/204762201-a1752992-2f82-43d2-b835-ae5f397511c3.png)
+
+Once we have selected the branch we can see all the changes that will be added to the `main` from the `dev` branch
+
+![Screenshot from 2022-11-30 10-36-54](https://user-images.githubusercontent.com/10490509/204762623-a074f05d-0049-4725-9e7a-abe8f6f82c17.png)
+
+Clicking `create pull request` will publish a pull request to the team.  This does not yet merge your code, but does let everyone know the changes you are proposing and allows them to test, comment, and review the code you are adding.  
+
+![Screenshot from 2022-11-30 10-37-21](https://user-images.githubusercontent.com/10490509/204763148-2b95f214-4749-4ac2-8ca9-2eb839541cfd.png)
+
+In this case I have added branch protection to the `main` branch to stop people from merging code without a review, this can really help to control the standard of your code and make sure that your `main` branch is always in working condition (Don't you just hate it when you want to show off your app and it isn't working right then?).  For more professional projects this can be a life saver if a server or application needs to stay up all the time.
+
+![Screenshot from 2022-11-30 10-34-20](https://user-images.githubusercontent.com/10490509/204763769-63107c8a-09b2-442a-ad89-6a59fa90ad93.png)
+
+Finally once the review has been completed by another member of the team, the button goes green and we can merge out code in! Notice that straight after the successful pull request, the option to delete the branch shows up in purple?  This is a very good idea, avoid always using the same branch (like a branch with your name) and instead work on a "one branch per issue" basis, as the number of branches you create will grow pretty big quickly, delete old ones to avoid duplicate names and getting lost in a swamp of old code.
+
+![Screenshot from 2022-11-30 10-37-40](https://user-images.githubusercontent.com/10490509/204763972-cb5f0564-024b-43c9-8656-d8b14a3793fd.png)
