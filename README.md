@@ -109,7 +109,7 @@ The image below shows that the file we saw earlier is now tracked and shows up i
 
 ![](https://github.com/S010MON/git-workshop/blob/main/images/status-tracked.png)
 
-Why don't we track all the files?  We if we compiled our Java code into a `.class` file, we don't want to record that.  It's a binary and not soruce code, so we can just recompile everything when we change the source anyway.  So make sure you select the right files to track when you have something like the below:
+Why don't we track all the files?  We if we compiled our Java code into a `.class` file, we don't want to record that.  It's a binary and not soruce code, so we would need to recompile everything if we change the source anyway, or use a different machine.  So make sure you select the right files to track when you have something like the below:
 
 ![](https://github.com/S010MON/git-workshop/blob/main/images/status-class-files.png)
 
