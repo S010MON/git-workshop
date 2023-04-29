@@ -126,7 +126,7 @@ To use the `-m` tag, add a message in quotes like this:
 Additional commands include:
 `$ git checkout` to checkout a new branch
 `$ git branch` to see which branch you're on and what is available
-`$ git help` to ge the help menu and list information about commands
+`$ git help` to get the help menu and list information about commands
 
 ## Connecting to GitHub in the terminal
 Now this is useful, but the real power of Git comes when combined with the internet.  GitHub, BitBucket, and BitLocker are a few websites that allow you to store your code online, and share it with people.  GitHub is the most popular, but has faced some contoversy when it was bought by Microsoft, but is the system we will focus on.  We can clone a repository from online, make changes to it and then push those changes to the cloud to keep safe copies online or to share across multiple devices.  This works as follows:
