@@ -8,8 +8,14 @@
 5. ![Using IntelliJ IDEA with Github](https://github.com/S010MON/git-workshop#5-using-intellij-idea-with-github)
 6. ![Working in a Team](https://github.com/S010MON/git-workshop#6-working-as-a-team)
 
-## 1. What is Git and how does it work?
-Git is a Version Control System (VCS) that is used to modify software to try out changes without losing the original working version.  Git works using a graph implementation:
+## What is Git
+Git is a Version Control System (VCS) that is used to modify software to try out changes without losing the original working version.
+Additionally, Git allows for the collaboration of teams on software projects, such that conflicts are minimized,
+and the flow of production is optimized. Finally, Git has become the 'LinkedIn' of the Developer world, where people can 
+look at your prior projects, see your interests and potentially collaborate.
+
+## 1 How does Git work?
+Git works using a graph implementation:
 
 Here we have some software that we have built until point A.
 ```
@@ -171,6 +177,8 @@ IntelliJ IDEA is a very popular Java IDE that features excellent Git integration
 Select the `GitHub` option and go through the steps of creating a token by selecting the `generate token` option.  It is important you do it this way, and not as outlined for the terminal above, as IDEA requires some extra permissions.  Once this is done, you will be able to manage all your github actions within the IDE.
 
 ## 6. Working as a Team
+
+#### Pull Requests and Merging
 When we work as a team, merging code together is the hardest part of collaboration.  However much we strive to use seperate files and compose functions into reuseable sub-components, there will always be accidental overwrites ore changes in requirements that cross the boundaries that we have set to work in.  This is where GitHub has a handy solution; pull requests.
 
 To get started we create a new branch for the issue or feature we are going to add:
@@ -200,3 +208,45 @@ In this case I have added branch protection to the `main` branch to stop people 
 Finally once the review has been completed by another member of the team, the button goes green and we can merge out code in! Notice that straight after the successful pull request, the option to delete the branch shows up in purple?  This is a very good idea, avoid always using the same branch (like a branch with your name) and instead work on a "one branch per issue" basis, as the number of branches you create will grow pretty big quickly, delete old ones to avoid duplicate names and getting lost in a swamp of old code.
 
 ![Screenshot from 2022-11-30 10-37-40](https://user-images.githubusercontent.com/10490509/204763972-cb5f0564-024b-43c9-8656-d8b14a3793fd.png)
+
+#### Issues
+Issues are a way to structure and allocate tasks that are still required to be completed within a repository. 
+
+![Empty Issues Page](images/issues_empty.png)
+
+Each, issue has multiple field, including:
+- **Title**: The title of the task to be completed (Main idea)
+- **Comment**: A more in-depth description of the task to be completed. The comment should aim to provide enough information such than any individual has a good grasp of the task to be completed. 
+- **Assignees**: Here you can assign individuals working on the project, to the specific tasks. 
+- **Labels**: The label provides a label to the issue for further filtering. 
+- **Projects**: The new issue will be listed within a project. (Projects explanation will be added at a later stage)
+- **Development**: As you covered above in the use of branches, this allows you to specifically link a branch that aims to solve the described issue.
+
+Below, I will show you each step in creating an issue, fulling in the fields, and making a branch for development.
+
+1. Blank new Issue
+![Blank New Issue](images/new_issue.png)
+
+2. Full in Title and Comment
+![Title and Comment Completed](images/issue_with_title_comment.png)
+
+3. Add in Assignees, Labels (Projects is skipped for now)
+
+- After clicking on the Assignees label, members of the repository will be shown. Simply select the user you wish to assign to the task
+![img.png](images/add_assignment.png)
+- After clicking on the Labels button, select the most appropriate label. A custom label can also be added to best describe the Issue
+![img.png](images/add_label.png)
+
+4. Click submit new issue to create the issue
+The below is the result of the issue being submitted
+![img.png](images/issue_created.png)
+
+5. Create a branch to solve the issue
+   1. Under Development (lower right) click, create new branch. This is the resulting screen displayed. Select create new branch
+
+      ![img.png](images/issue_branch_1.png)
+   2. A new branch has been created. To use this branch follow steps as previously explained
+         ```
+      git pull
+      git checkout 1-add-github-projects-explanation
+      ```
