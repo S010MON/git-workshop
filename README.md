@@ -1,6 +1,4 @@
 # Git
-Many thanks to Leon Debnath (https://github.com/S010MON) the creator of original repository to help people understand Git.
-This repository is a fork of his original.
 
 ## Contents
 1. ![What is Git and how does it work?](https://github.com/S010MON/git-workshop#1-what-is-git-and-how-does-it-work)
