@@ -109,7 +109,7 @@ The image below shows that the file we saw earlier is now tracked and shows up i
 
 ![](https://github.com/S010MON/git-workshop/blob/main/images/status-tracked.png)
 
-Why don't we track all the files?  We if we compiled our Java code into a `.class` file, we don't want to record that.  It's a binary and not soruce code, so we can just recompile everything when we change the source anyway.  So make sure you select the right files to track when you have something like the below:
+Why don't we track all the files?  We if we compiled our Java code into a `.class` file, we don't want to record that.  It's a binary and not soruce code, so we would need to recompile everything if we change the source anyway, or use a different machine.  So make sure you select the right files to track when you have something like the below:
 
 ![](https://github.com/S010MON/git-workshop/blob/main/images/status-class-files.png)
 
@@ -126,10 +126,10 @@ To use the `-m` tag, add a message in quotes like this:
 Additional commands include:
 `$ git checkout` to checkout a new branch
 `$ git branch` to see which branch you're on and what is available
-`$ git help` to ge the help menu and list information about commands
+`$ git help` to get the help menu and list information about commands
 
 ## Connecting to GitHub in the terminal
-Now this is useful, but the real power of Git comes when combined with the internet.  GitHub, BitBucket, and BitLocker are a few websites that allow you to store your code online, and share it with people.  GitHub is the most popular, but has faced some contoversy when it was bought by Microsoft, but is the system we will focus on.  We can clone a repository from online, make changes to it and then push those changes to the cloud to keep safe copies online or to share across multiple devices.  This works as follows:
+What we have covered so far is useful, but the real power of Git comes when combined with the internet.  GitHub, BitBucket, and BitLocker are a few websites that allow you to store your code online, and share it with people.  GitHub is the most popular, but has faced some contoversy when it was bought by Microsoft, but is the system we will focus on.  We can clone a repository from online, make changes to it and then push those changes to the cloud to keep safe copies online or to share across multiple devices.  This works as follows:
 
 #### Clone
 You can make a clone of an online branch by using the `clone` command with the target URL from the repo you want.  For example, if you use the command below, you will make a clone of this workshop's repo.
